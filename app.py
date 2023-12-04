@@ -32,7 +32,7 @@ def get_query_results(question):
     # Perform Pinecone query
     query_results = index.query(vector=query_vectors, top_k=2)
 
-    return query_results
+    return query_results.to_dict()
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
