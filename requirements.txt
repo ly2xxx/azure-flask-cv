@@ -55,7 +55,6 @@ tqdm==4.64.1
 transformers==4.26.1
 typing_extensions==4.5.0
 urllib3==1.26.14
-vboxapi==1.0
 virtualenv==20.25.0
 Werkzeug==3.0.1
 win32-setctime==1.1.0
