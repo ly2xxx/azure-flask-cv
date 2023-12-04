@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import os
 import pinecone
 from sentence_transformers import SentenceTransformer
+modelPath = "./all-MiniLM-L6-v2/"
 
 app = Flask(__name__)
 
@@ -24,7 +25,9 @@ def get_query_results(question):
     query_questions = [question, ]
 
     # Initialize Sentence Transformer model
-    model = SentenceTransformer('all-MiniLM-L6-v2')
+    #model = SentenceTransformer('all-MiniLM-L6-v2')
+    #model.save('./all-MiniLM-L6-v2/')
+    model = SentenceTransformer(modelPath)
 
     # Encode query questions
     query_vectors = [model.encode(str(question)).tolist() for question in query_questions]
