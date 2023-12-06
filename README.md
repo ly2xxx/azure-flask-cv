@@ -1,9 +1,11 @@
 # Python (Flask) web app to demo how to carry out embeddings similarity search using open-source embedding libraries and vector DB
-Step 1 - use provided PineCone-opensource-libs.ipynb to analyse any pure-text pdf file, and upsert sentence embeddings to Pinecone vector database 
-Step 2 - from any Python IDE or windows powershell, execute "pip install -r requirements.txt" from project root
-Step 3 - from the same project root, use "flask run" command to start the web app locally
+Step 1 - use provided PineCone-opensource-libs.ipynb to analyse any pure-text pdf file, and upsert sentence embeddings to Pinecone vector database <br>
+Step 2 - from any Python IDE or windows powershell, execute "pip install -r requirements.txt" from project root <br>
+Step 3 - from the same project root, use "flask run" command to start the web app locally <br>
 
 ================================================================
+Below is common Azure quickstart instructions if you plan to run the app on cloud
+
 This is the sample Flask application for the Azure Quickstart [Deploy a Python (Django or Flask) web app to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-python). For instructions on how to create the Azure resources and deploy the application to Azure, refer to the Quickstart article.
 
 Sample applications are available for the other frameworks here:
